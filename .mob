@@ -1,0 +1,6 @@
+MOB_WIP_BRANCH_PREFIX="communications-mob/"
+MOB_OPEN_COMMAND="code %s"
+MOB_START_COMMIT_MESSAGE="mob start"
+MOB_WIP_COMMIT_MESSAGE="mob next"
+MOB_TIMER="15"
+MOB_TIMER_USER="Dustin"

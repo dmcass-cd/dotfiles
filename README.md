@@ -2,7 +2,7 @@
 
 ![Screenshot of the shell prompt in a Git repository with one staged, one modified, and one untracked file](init/prompt.png)
 
-My Bash, Git, Vim, and macOS settings. They started as a fork of [Mathias Bynens’s dotfiles](https://github.com/mathiasbynens/dotfiles).
+My Bash, Git, Vim, and macOS settings for my ClassDojo Mac. This fork of [my personal dotfiles](https://github.com/dmcass/dotfiles) adds the work packages and mob settings.
 
 **Warning:** These settings are mine. If you want to try them, fork the repository and review the code first, and remove what you don’t want.
 
@@ -10,17 +10,19 @@ My Bash, Git, Vim, and macOS settings. They started as a fork of [Mathias Bynens
 
 1. Install [Homebrew](https://brew.sh/).
 
-1. Clone the repository. The Git settings expect personal repositories under `~/projects/personal/`:
+1. Clone the repository, and add the personal dotfiles as `upstream`:
 
     ```bash
-    git clone https://github.com/dmcass/dotfiles.git ~/projects/personal/dotfiles
-    cd ~/projects/personal/dotfiles
+    git clone git@github.com:dmcass-cd/dotfiles.git ~/projects/dotfiles
+    cd ~/projects/dotfiles
+    git remote add upstream git@personal.github.com:dmcass/dotfiles.git
     ```
 
-1. Install the Homebrew packages:
+1. Install the Homebrew packages, including the work tools:
 
     ```bash
     brew bundle --file=Brewfile
+    brew bundle --file=Brewfile.classdojo
     ```
 
 1. Make the Homebrew version of Bash your login shell:
@@ -53,6 +55,15 @@ My Bash, Git, Vim, and macOS settings. They started as a fork of [Mathias Bynens
 ## Update
 
 Because `~` links to the repository, `git pull` updates your settings. After a pull adds a file, run `./bootstrap.sh` again to link it.
+
+To bring in changes from the personal dotfiles, merge `upstream/main`:
+
+```bash
+git fetch upstream
+git merge upstream/main
+```
+
+`.mob` leaves out `MOB_TIMER_ROOM`. Export it from `~/.extra` instead.
 
 ## Local settings
 

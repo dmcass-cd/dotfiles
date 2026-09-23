@@ -1,0 +1,22 @@
+# Install with: brew bundle --file=Brewfile.classdojo
+tap "getsentry/tools"
+tap "hashicorp/tap"
+tap "int128/kubelogin"
+tap "pulumi/tap"
+tap "remotemobprogramming/brew"
+
+brew "consul-template"
+brew "docker-credential-helper-ecr"
+brew "helm"
+brew "kubernetes-cli"
+brew "mysql-client", link: true
+brew "postgresql@18", link: true
+brew "hashicorp/tap/vault"
+brew "int128/kubelogin/kubelogin"
+brew "pulumi/tap/pulumi"
+brew "pulumi/tap/crd2pulumi"
+brew "getsentry/tools/sentry-cli"
+brew "remotemobprogramming/brew/mob"
+cask "infra"
+cask "ngrok"
+cask "orbstack"
