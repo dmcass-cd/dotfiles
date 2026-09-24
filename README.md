@@ -50,8 +50,6 @@ My Bash, Git, Vim, and macOS settings for my ClassDojo Mac. This fork of [my per
 
     Replace `COMPUTER_NAME` with the name for this Mac. Without an argument, the name doesn’t change.
 
-    The settings for Safari, Mail, and TextEdit apply only if Terminal has Full Disk Access. The script prints a warning if it doesn’t.
-
 ## Update
 
 Because `~` links to the repository, `git pull` updates your settings. After a pull adds a file, run `./bootstrap.sh` again to link it.
