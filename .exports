@@ -41,3 +41,7 @@ export HOMEBREW_AUTO_UPDATE_SECS="86400"
 
 # Use VS Code for default Kubernetes editor
 export KUBE_EDITOR='code --wait'
+
+# Suppress Maestro notices
+export MAESTRO_CLI_NO_ANALYTICS=1
+export MAESTRO_CLI_ANALYSIS_NOTIFICATION_DISABLED=true
