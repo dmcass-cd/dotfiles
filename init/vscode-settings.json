@@ -171,13 +171,5 @@
         "**/.forgejo/workflows/*.yml",
         "**/.forgejo/workflows/*.yaml"
     ],
-    "totalTypeScript.hiddenTips": [
-        "typing-function-parameters",
-        "function-return-type",
-        "basic-types",
-        "union-type",
-        "array-type",
-        "undefined-keyword",
-        "ts-object-type"
-    ]
+    "totalTypeScript.hideAllTips": true
 }
