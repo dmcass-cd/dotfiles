@@ -70,3 +70,7 @@ if [ -f ~/.atuin/bin/env ]; then
     [ -f "$HOMEBREW_PREFIX/etc/profile.d/bash-preexec.sh" ] && source "$HOMEBREW_PREFIX/etc/profile.d/bash-preexec.sh";
     eval "$(atuin init bash --disable-up-arrow)";
 fi;
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init.bash 2>/dev/null || :
