@@ -131,6 +131,7 @@
 
     # Recommended pager config
     pager = less -FMRiX
+    sshCommand = /usr/bin/ssh
 
 [color]
 
